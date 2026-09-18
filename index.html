@@ -183,41 +183,45 @@
 <header>
   <img class="app-logo" src="logo.png" alt="VERST" />
   <h1><span class="accent">V</span>ERST</h1>
-  <p>Privacy Policy &nbsp;·&nbsp; Last updated: August 2026</p>
+  <p>Privacy Policy &nbsp;·&nbsp; Last updated: September 2026</p>
 </header>
 
 <div class="container">
 
   <div class="summary-box">
     <h2>At a glance</h2>
-    <p>Everything you record stays on your device. VERST collects nothing, sends nothing, and has no way to.</p>
+    <p>
+      Everything you record stays on your device. VERST sends anonymous usage statistics and crash
+      reports, which you can turn off, and uses Google Play to handle purchases. It never sends
+      what you record.
+    </p>
     <div class="summary-grid">
       <div class="summary-item">
         <span class="icon">🔒</span>
         <div>
-          <strong>Stored locally</strong>
-          <span class="desc">All data on your device only</span>
+          <strong>Your records stay local</strong>
+          <span class="desc">Cars, fill-ups and expenses never leave your device</span>
         </div>
       </div>
       <div class="summary-item">
-        <span class="icon">📡</span>
+        <span class="icon">📊</span>
         <div>
-          <strong>No internet access</strong>
-          <span class="desc">The app cannot reach a network</span>
+          <strong>Anonymous statistics</strong>
+          <span class="desc">Screens opened, features used, crashes. You can switch this off</span>
         </div>
       </div>
       <div class="summary-item">
         <span class="icon">🚫</span>
         <div>
-          <strong>No tracking, no ads</strong>
-          <span class="desc">No analytics or crash reporting</span>
+          <strong>No ads, no account</strong>
+          <span class="desc">No advertising ID, no sign-up, nothing sold</span>
         </div>
       </div>
       <div class="summary-item">
         <span class="icon">🗂</span>
         <div>
           <strong>Your files, your choice</strong>
-          <span class="desc">You decide where exports go</span>
+          <span class="desc">You decide where exports and backups go</span>
         </div>
       </div>
     </div>
@@ -228,88 +232,134 @@
     <p>
       VERST ("the App", "we", "us") is a vehicle expense tracker that helps you record what you
       spend on your cars and understand what they cost to run. This Privacy Policy explains what
-      information the App handles, how it is stored, and who can reach it.
+      information the App handles, where it is stored, and who can see it.
     </p>
     <p>
-      The short version is unusually short: the App is built to work entirely offline, and it does
-      not have the technical means to send your information anywhere.
+      In short: the records you enter stay on your device. A small amount of technical data leaves
+      the device to help us fix crashes, understand which features are used, and process purchases.
+      This page lists all of it.
     </p>
   </section>
 
   <section>
-    <h2><span class="num">2</span>Data stored on your device</h2>
+    <h2><span class="num">2</span>Data stored only on your device</h2>
     <p>
-      Everything you enter is stored locally on your device, inside the App's private data
-      directory, which other apps cannot read. Nothing is uploaded, automatically or otherwise.
+      Everything you enter is stored locally, inside the App's private storage, which other apps
+      cannot read. None of it is uploaded to us or to anyone else.
     </p>
     <ul>
-      <li><strong>Vehicles</strong> — name or registration plate, make, model, odometer readings.</li>
-      <li><strong>Fuel fills</strong> — date, volume, cost, odometer reading.</li>
-      <li><strong>Expenses</strong> — date, amount, category, notes, and any line items you add.</li>
-      <li><strong>Categories</strong> — the built-in list and any you create yourself.</li>
-      <li><strong>Settings</strong> — your chosen currency and unit system.</li>
+      <li><strong>Vehicles</strong>: name or registration plate, make, model, odometer readings, and an optional photo.</li>
+      <li><strong>Fuel fills and charging</strong>: date, volume or energy, cost, odometer reading.</li>
+      <li><strong>Expenses</strong>: date, amount, category, notes, and any line items you add.</li>
+      <li><strong>Categories</strong>: the built-in list and any you create yourself.</li>
+      <li><strong>Settings</strong>: currency, units, language, theme and similar preferences.</li>
     </ul>
     <p>
-      This data never leaves your device unless you deliberately export it (see section 5).
+      This data never leaves your device unless you export it yourself (see section 6).
     </p>
   </section>
 
   <section>
-    <h2><span class="num">3</span>No network access</h2>
+    <h2><span class="num">3</span>Data that leaves your device</h2>
     <p>
-      VERST does not request the Android <code>INTERNET</code> permission. Android therefore
-      prevents the App from opening any network connection at all. This is not a promise about how
-      we behave — it is a restriction enforced by your operating system, and you can verify it
-      yourself in the App's permission list.
-    </p>
-    <p>
-      There are no servers involved in running VERST, because there is nothing for the App to talk
-      to. We never receive your data, so we cannot lose it, share it, or be compelled to hand it
-      over.
-    </p>
-  </section>
-
-  <section>
-    <h2><span class="num">4</span>No third-party services</h2>
-    <p>
-      The App contains no advertising network, no analytics library, no crash reporting, and no
-      marketing or attribution software of any kind. No third-party code in the App collects
-      information about you.
+      VERST uses three services. Each one receives only the technical data listed below.
     </p>
     <table>
       <tr>
-        <th>What VERST does not do</th>
+        <th>Service</th>
+        <th>What it receives</th>
+        <th>Why</th>
       </tr>
-      <tr><td>Show advertisements or use an advertising identifier</td></tr>
-      <tr><td>Track your usage, sessions, or behaviour</td></tr>
-      <tr><td>Collect crash reports or diagnostic telemetry</td></tr>
-      <tr><td>Sell, rent, or share information with anyone</td></tr>
-      <tr><td>Create an account or profile for you</td></tr>
+      <tr>
+        <td><strong>Google Firebase Analytics</strong></td>
+        <td>
+          Which screens are opened and which features are used; app opens and sessions; a random
+          app-instance identifier; device model, OS version and language; approximate region
+          derived from the IP address.
+        </td>
+        <td>To understand which features are used and improve the App.</td>
+      </tr>
+      <tr>
+        <td><strong>Google Firebase Crashlytics</strong></td>
+        <td>
+          Crash reports: the technical error, the state of the App when it crashed, a random
+          installation identifier, and device model and OS version.
+        </td>
+        <td>To find and fix crashes.</td>
+      </tr>
+      <tr>
+        <td><strong>Google Play Billing and RevenueCat</strong></td>
+        <td>
+          When you buy VERST Plus: the purchase and product identifiers, a random anonymous user
+          identifier, and your IP address. Payment details are handled by Google Play and are never
+          seen by us or by RevenueCat.
+        </td>
+        <td>To confirm a purchase and restore it later.</td>
+      </tr>
+    </table>
+    <p>
+      <strong>What is never sent:</strong> amounts, odometer readings, vehicle names or photos,
+      notes, or the names of categories you create. When the App reports that a custom category
+      was used, it sends only the word "custom", not the name.
+    </p>
+    <p>
+      All of this data travels over encrypted connections (HTTPS). These providers process it on
+      our behalf and may store it outside your country, including in the United States. Their own
+      policies apply:
+      <a href="https://policies.google.com/privacy">Google</a>,
+      <a href="https://firebase.google.com/support/privacy">Firebase</a>,
+      <a href="https://www.revenuecat.com/privacy">RevenueCat</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>Your choice: turning statistics off</h2>
+    <p>
+      Usage statistics and crash reports are on by default. You can turn both off at any time in
+      <strong>Settings → About → Share usage statistics</strong>. The change takes effect at once,
+      and nothing more is sent by Firebase Analytics or Crashlytics from that device.
+    </p>
+    <p>
+      Purchase data cannot be switched off, because without it a purchase cannot be confirmed or
+      restored. It is only sent when you buy VERST Plus or restore a purchase.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>What VERST does not do</h2>
+    <table>
+      <tr><th>VERST does not</th></tr>
+      <tr><td>Show advertisements or use your advertising identifier</td></tr>
+      <tr><td>Ask you to create an account, or ask for your name or email</td></tr>
+      <tr><td>Use your precise location</td></tr>
+      <tr><td>Sell, rent or share your information with anyone for their own purposes</td></tr>
+      <tr><td>Send anything you record in the App</td></tr>
     </table>
   </section>
 
   <section>
-    <h2><span class="num">5</span>Export, import and backup files</h2>
+    <h2><span class="num">6</span>Export, import and backup files</h2>
     <p>
       VERST can export your records to a CSV file for use in a spreadsheet, and can save a full
       backup file that you can restore later. You can also import a CSV you already have.
     </p>
     <p>
-      These are actions you take deliberately. When you export, your device's own file picker asks
-      you where to save the file, and that choice is entirely yours. Once written, the file is an
-      ordinary document on your device, governed by whatever you subsequently do with it.
+      These are actions you take yourself. Your device's own file picker asks where to save the
+      file, and that choice is yours. Once saved, the file is an ordinary document on your device
+      or in the place you chose.
     </p>
     <p>
-      We have no access to these files and do not receive a copy. If you move a backup to a cloud
+      We have no access to these files and do not receive a copy. If you save a backup to a cloud
       service or send it to someone, that service's privacy policy applies to it, not ours.
     </p>
   </section>
 
   <section>
-    <h2><span class="num">6</span>Device permissions</h2>
+    <h2><span class="num">7</span>Device permissions</h2>
     <p>
-      VERST requests no Android runtime permissions — no camera, no location, no contacts, no
-      storage, no notifications.
+      VERST asks for no runtime permissions: no location, no contacts, no storage, no
+      notifications. It declares internet access, which the services in section 3 need, and
+      Google Play's billing permission, which purchases need.
     </p>
     <table>
       <tr>
@@ -317,60 +367,73 @@
         <th>How it works without a permission</th>
       </tr>
       <tr>
+        <td>Adding a vehicle photo</td>
+        <td>Uses the Android photo picker or camera app, which hands over only the photo you choose</td>
+      </tr>
+      <tr>
         <td>Choosing a file to import</td>
-        <td>Uses the Android system file picker, which grants access to the single file you pick</td>
+        <td>Uses the Android file picker, which grants access to the single file you pick</td>
       </tr>
       <tr>
         <td>Saving an export or backup</td>
-        <td>Uses the Android system save dialog, which writes only where you choose</td>
+        <td>Uses the Android save dialog, which writes only where you choose</td>
       </tr>
     </table>
   </section>
 
   <section>
-    <h2><span class="num">7</span>Data retention and deletion</h2>
+    <h2><span class="num">8</span>Legal basis</h2>
     <p>
-      Your data stays on your device for as long as you keep the App installed. You are in complete
-      control of it:
+      If you are in the European Economic Area or the United Kingdom: we process usage statistics
+      and crash reports based on our legitimate interest in keeping the App working and improving
+      it. You can object at any time with the switch described in section 4. We process purchase
+      data to fulfil the purchase you made.
     </p>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span>Data retention and deletion</h2>
     <ul>
-      <li>Delete individual vehicles, entries or categories from inside the App.</li>
-      <li>Clear the App's storage from your device settings to remove everything at once.</li>
-      <li>Uninstall the App, which deletes its database entirely.</li>
+      <li><strong>Your records</strong> stay on your device until you delete them, clear the App's storage, or uninstall the App.</li>
+      <li><strong>Usage statistics</strong> are kept for up to 2 months.</li>
+      <li><strong>Crash reports</strong> are kept for up to 90 days.</li>
+      <li><strong>Purchase records</strong> are kept as long as they are needed to restore your purchase and to meet legal and tax obligations.</li>
     </ul>
     <p>
-      Because we never receive your data, there is nothing for us to delete on your behalf and no
-      deletion request for you to make.
+      The data we receive is linked to random identifiers, not to your name or email. You still
+      have the right to access, correct or delete it, and to complain to your data protection
+      authority. To make a request, email us at the address below.
     </p>
   </section>
 
   <section>
-    <h2><span class="num">8</span>Children's privacy</h2>
+    <h2><span class="num">10</span>Children's privacy</h2>
     <p>
-      VERST is intended for adults who own or run a vehicle. It is not directed at children, and it
-      does not knowingly collect personal information from anyone, of any age.
+      VERST is intended for adults who own or run a vehicle. It is not directed at children, and we
+      do not knowingly collect personal information from children.
     </p>
   </section>
 
   <section>
-    <h2><span class="num">9</span>Changes to this policy</h2>
+    <h2><span class="num">11</span>Changes to this policy</h2>
     <p>
       We may update this Privacy Policy from time to time. Changes will be posted on this page with
-      an updated date. If a future version of VERST introduces features that handle data
-      differently — for example optional accounts or cloud backup — this policy will be updated
-      before that version is released.
+      an updated date. If a future version of VERST handles data differently, for example through
+      optional accounts or cloud backup, this policy will be updated before that version is
+      released.
     </p>
     <p><strong>Revision history</strong></p>
     <ul>
-      <li>August 2026 — Initial publication.</li>
+      <li>September 2026: Added anonymous usage statistics, crash reports and in-app purchases, and the switch to turn statistics off.</li>
+      <li>August 2026: Initial publication.</li>
     </ul>
   </section>
 
   <div class="contact-box">
     <h2>Questions or concerns?</h2>
     <p>
-      If you have any questions about this Privacy Policy or the App's data practices, please reach
-      out by email or open an issue on GitHub:
+      If you have any questions about this Privacy Policy or the App's data practices, or want to
+      make a data request, email us or open an issue on GitHub:
     </p>
     <p>
       <a href="mailto:info.myverst@gmail.com">info.myverst@gmail.com</a><br />
