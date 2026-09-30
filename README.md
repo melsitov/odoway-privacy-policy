@@ -1,1 +1,1 @@
-# verst-privacy-policy
+# odoway-privacy-policy
